@@ -284,20 +284,19 @@ header .info-server p.small {
 
 header .info-server .quality-server {
     font-family: akrobatb;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     margin-top: 45px
 }
 
 header .info-server .quality-server div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-right: 74px;
     font-size: 80px;
     font-weight: 900;
-    pointer-events: none
+    pointer-events: none;
 }
 
 header .info-server .quality-server div:last-child {
@@ -646,16 +645,17 @@ main .how-start-game p span {
 }
 
 main .how-start-game {
-    margin-top: 3.03vw;
+    margin-top: 3em;
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
-    z-index: 1
+    z-index: 1;
 }
 
 main .how-start-game p.title {
     font-family: akrobatbb;
-    width: 69.152vw;
-    text-align: right
+    width: 100%;
+    margin-right: 0;
+    text-align: right;
 }
 
 main .how-start-game .guide-staps {
@@ -992,7 +992,7 @@ footer .copyright p.protection {
     letter-spacing: .121vw;
     text-align: right;
     -ms-flex-item-align: center;
-    align-self: center
+    align-self: center;
 }
 
 header .topline .topline-wrap .header-menu li.active:before,
