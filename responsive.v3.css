@@ -33,7 +33,7 @@
         margin-right: 30px;
     }
 }
-@media (max-width: 1350px) {
+@media (max-width: 400px) {
     main:before {
         background-position: center;
     }
