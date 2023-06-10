@@ -1295,6 +1295,13 @@ header .topline .topline-wrap .header-menu li:hover .youtube {
     }
 }
 
+@media only screen and (max-width:450px) {
+    main .how-start-game .guide-staps div div {
+        font-size: .45em;
+        width: 160px !important
+    }
+}
+
 @media only screen and (max-width:437px) {
     .info-container {
         top: 9em !important
