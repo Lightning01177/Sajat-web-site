@@ -804,15 +804,14 @@ main .how-start-game .guide-staps .stap-2 {
 main .how-start-game .guide-staps .stap-2:after {
     content: "";
     display: inline;
-    background: -webkit-linear-gradient(top, rgba(244, 248, 0, .218) 0, rgba(0, 248, 185, 0) 90%);
     background: linear-gradient(180deg, rgba(255, 190, 13, .137) 0, rgba(0, 248, 185, 0) 90%);
     width: 100%;
     z-index: -1;
-    height: 13.03vw;
+    height: 10em;
     position: absolute;
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
-    bottom: -12em
+    bottom: -10em;
 }
 
 main .how-start-game .guide-staps .stap-3 {
@@ -830,7 +829,6 @@ main .how-start-game .guide-staps .stap-4 {
 
 main .how-start-game .guide-staps .stap-4:after {
     content: "";
-    background: -webkit-linear-gradient(top, rgba(197, 218, 81, .342) 0, rgba(0, 212, 255, 0) 90%);
     background: linear-gradient(180deg, rgba(252, 255, 97, .267) 0, rgba(0, 212, 255, 0) 90%);
     width: 100%;
     height: 13.03vw;
@@ -1320,9 +1318,6 @@ header .topline .topline-wrap .header-menu li:hover .youtube {
 }
 
 @media only screen and (min-width:1200px) {
-    main .how-start-game .guide-staps .stap-2:after {
-        height: 12vw
-    }
 
     main .how-start-game .guide-staps div div {
         font-size: .7em;
@@ -1341,7 +1336,4 @@ header .topline .topline-wrap .header-menu li:hover .youtube {
 }
 
 @media only screen and (min-width:2300px) {
-    main .how-start-game .guide-staps .stap-2:after {
-        height: 10vw
-    }
 }
