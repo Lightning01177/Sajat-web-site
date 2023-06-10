@@ -1282,16 +1282,16 @@ header .topline .topline-wrap .header-menu li:hover .youtube {
     }
 }
 
-@media only screen and (max-width:690px) {
-    footer {
-        padding-bottom: .5em
+@media only screen and (max-width:750px) {
+    main .how-start-game .guide-staps div div {
+        font-size: .5em;
+        width: 200px !important
     }
 }
 
-@media only screen and (max-width:500px) {
-    main .how-start-game .guide-staps div div {
-        font-size: .45em;
-        width: 150px !important
+@media only screen and (max-width:690px) {
+    footer {
+        padding-bottom: .5em
     }
 }
 
