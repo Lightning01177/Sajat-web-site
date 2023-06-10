@@ -679,7 +679,19 @@ main .how-start-game .guide-staps {
     font-size: 1em;
 }
 
+@media only screen and (max-width:900px){
+    main .how-start-game .guide-staps div div{
+        font-size: .6em;
+        width: 200px !important;
+    }
+}
 
+@media only screen and (max-width:500px){
+    main .how-start-game .guide-staps div div{
+        font-size: .45em;
+        width: 150px !important;
+    }
+}
 @media only screen and (min-width:1900px) {
     main .how-start-game .guide-staps {
         font-size: 1.2em;
