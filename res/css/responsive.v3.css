@@ -166,15 +166,6 @@
         width: 340px!important;
         background-size: 100% auto!important;
     }
-    .header-menu {
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        margin-top: 20px;
-    }
-    .header-menu li {
-        width: 50%;
-        margin-right: 0;
-    }
     .header-menu li a {
         display: block;
         padding: 5px;
@@ -187,6 +178,7 @@
         display: flex;
         justify-content: center;
     }
+
     header {
         height: 783px;
     }
