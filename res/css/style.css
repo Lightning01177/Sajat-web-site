@@ -1265,7 +1265,7 @@ header .topline .topline-wrap .header-menu li:hover .youtube {
         justify-content: center;
         gap: 1em
     }
-    .logo-wrap {
+    .topline .logo-wrap {
         display: none;
     }
 
