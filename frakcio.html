@@ -39,10 +39,6 @@
             <input type="text" class="form-control ninpot" id="szamInput" placeholder="5" required>
         </div>
         <div class="mb-3">
-            <label for="messageInput" class="form-label">Frakció tagok aktivitása (???)</label>
-            <input type="text" class="form-control ninpot" id="aktInput" placeholder="???" required>
-        </div>
-        <div class="mb-3">
             <label for="messageInput" class="form-label">Frakció rangok</label>
             <input type="text" class="form-control ninpot" id="rangInput" placeholder="1337, Marksman, Veteran, Captain, Masterbrain" required>
         </div>
@@ -77,7 +73,6 @@
         const senderFrakinev = document.getElementById('nevInput').value;
         const senderFrakitor = document.getElementById('törInput').value;
         const senderFrakiszam = document.getElementById('szamInput').value;
-        const senderFrakiakt = document.getElementById('aktInput').value;
         const senderFrakirang = document.getElementById('rangInput').value;
         const senderFrakiauto = document.getElementById('autoInput').value;
         const senderFrakimap = document.getElementById('mapInput').value;
@@ -93,7 +88,6 @@
                     { name: 'Frakció teljes neve:', value: senderFrakinev },
                     { name: 'Rövid frakció történet:', value: senderFrakitor },
                     { name: 'Frakció tagok száma:', value: senderFrakiszam },
-                    { name: 'Frakció tagok aktivitása:', value: senderFrakiakt },
                     { name: 'Frakció rangok:', value: senderFrakirang },
                     { name: 'Frakció autó igény:', value: senderFrakiauto },
                     { name: 'Frakcióhoz szeretnétek-e mappolást:', value: senderFrakimap },
