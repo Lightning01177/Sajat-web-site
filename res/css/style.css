@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: Akrobat;
     src: url(../fonts/Akrobat.otf);
     font-weight: 400;
@@ -496,7 +496,7 @@ main .game-servers .header-text p.online span {
 }
 
 main .game-servers .server {
-    background: url(https://cdn.discordapp.com/attachments/1023192538141700096/1106910579978940486/server-bg.png);
+    background: url(https://cdn.discordapp.com/attachments/1086418475402150000/1143821732717809724/server-bg.png);
     width: 69.152vw;
     height: 29.091vw;
     position: relative;
