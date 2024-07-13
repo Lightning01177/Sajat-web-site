@@ -552,7 +552,7 @@ main .game-servers .server.two:before {
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
     position: absolute;
-    right: 3.636vw;
+    right: 23.636vw;
     bottom: 7.152vw;
     width: 19.758vw;
     height: 4.606vw;
