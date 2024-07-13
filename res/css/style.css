@@ -589,8 +589,8 @@ main .game-servers .server.two:before {
 main .game-servers .server .online {
     font-family: akrobatbb;
     position: absolute;
-    right: 3.636vw;
-    top: 5.758vw;
+    right: 26.636vw;
+    top: 10.758vw;
     color: #fff;
     -webkit-transform: skewY(-4deg);
     transform: skewY(-4deg);
