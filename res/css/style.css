@@ -525,7 +525,7 @@ main .game-servers .server p {
 
 main .game-servers .server.one:before {
     content: "";
-    /* background: url(../images/tank-server.png); */
+    background: url(../images/car-index.png); 
     background-size: cover;
     width: 50.545vw;
     height: 33.576vw;
