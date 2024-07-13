@@ -840,7 +840,7 @@ main .how-start-game .guide-staps .stap-4:after {
 
 main .how-start-game .guide-staps .stap-4:before {
     content: "";
-    background: url(../images/grand-cap.png);
+    /* background: url(../images/grand-cap.png); */
     width: 15em;
     aspect-ratio: 2/1;
     background-size: contain;
