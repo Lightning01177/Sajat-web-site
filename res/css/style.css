@@ -631,7 +631,7 @@ main .game-servers .server .online span {
 
 main .game-servers .server .online span:before {
     content: "";
-    background: url(../images/head.svg);
+    background: url(../images/user.svg);
     width: 1.455vw;
     height: 1.818vw;
     background-size: cover;
