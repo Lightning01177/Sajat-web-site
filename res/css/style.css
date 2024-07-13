@@ -527,12 +527,13 @@ main .game-servers .server.one:before {
     content: "";
     background: url(../images/car-index.png); 
     background-size: cover;
-    width: 50.545vw;
-    height: 33.576vw;
+    width: 45.545vw;
+    height: 40.576vw;
+    transform: scale(0.8,0.8);
     position: absolute;
     z-index: 1;
     left: -4.182vw;
-    top: -.303vw
+    top: -8.103vw
 }
 
 main .game-servers .server.two:before {
