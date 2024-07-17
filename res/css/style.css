@@ -103,7 +103,7 @@ header {
 }
 
 header .girl-header {
-    background: url(../images/girl-header.png) no-repeat;
+    /* background: url(../images/girl-header.png) no-repeat; */
     width: 878px;
     height: 95%;
     position: absolute;
