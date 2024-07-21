@@ -496,7 +496,7 @@ main .game-servers .header-text p.online span {
 }
 
 main .game-servers .server {
-    background: url(https://cdn.discordapp.com/attachments/613277360493428748/1148717583625891840/server-bg.png?ex=6698d35e&is=669781de&hm=2ba3670c2dea952ce448a118c475489831108c8ed50772d05194ad67b1ad3b69&);
+    background: url(../images/server-bg.png);
     width: 69.152vw;
     height: 29.091vw;
     position: relative;
