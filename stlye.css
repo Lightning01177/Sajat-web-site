@@ -1,0 +1,374 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: auto;
+  background-color: #6f4e37;
+  color: white;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #a57a50;
+  position: relative;
+}
+
+.topnav #myLinks {
+  background-color: #4a4444;
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #785339;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.header-container a {
+  display: inline-flex;      /* kulcs */
+  align-items: center;       /* vertikális közép */
+  gap: 6px;                  /* ikon–szöveg távolság */
+  white-space: nowrap;       /* ne törje a szöveget */
+}
+
+.svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;            /* ne nyomódjon össze */
+}
+
+.topnav #myLinks a:hover {
+  color: #d2a77d;
+}
+
+.active {
+  background-color: #a57a50;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .topnav {
+    text-align: center;
+  }
+}
+
+/* menu.html */
+
+.menu-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #8a7f73;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-table th {
+  background-color: #785339; 
+  color: white;
+  text-align: left;
+  padding: 12px;
+}
+
+.menu-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-table tr:hover {
+  background-color: #4f3f31;
+}
+
+.menu-table td:last-child {
+  font-weight: bold;
+  color: #e3a87e;
+}
+
+/* gallery.html */
+
+.gallery-text {
+  color: white;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+@media (max-width: 600px) {
+  .gallery img {
+    height: 180px;
+  }
+
+  .gallery-text {
+    font-size: 14px;
+  }
+}
+
+/* contact.html */
+
+.contact-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-main h1 {
+  color: black; 
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-text {
+  text-align: center;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: black;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #fffaf5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.211);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-form .contact-button button {
+  background-color: #a57a50;
+  color: white;
+  padding: 12px 60px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #8b5a2b;
+}
+
+.contact-button {
+  text-align: center;
+}
+
+.contact-info {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f3e5d8;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.contact-info h2 {
+  color: #8b5a2b;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .contact-main {
+    padding: 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form .contact-button button {
+    font-size: 14px;
+    padding: 12px 40px;
+  }
+}
+
+/* index.html */
+
+.home {
+  font-family: Arial, sans-serif;
+  color: #3b2f2f;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("images/img3.jpg") center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  background-color: #8b5a2b;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.btn-outline:hover {
+  background-color: black;
+}
+
+.mini-gallery .btn:hover {
+  background-color: black;
+}
+
+.btn-outline {
+  color: white;
+  background: #d2a77d;
+  border: 2px solid white;
+}
+
+.features {
+  padding: 40px 20px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #f5eee8;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.1em;
+}
+
+.about {
+  background-color: #2b2928;
+  color: white;
+  padding: 40px 20px;
+  padding-top: 10px; 
+  margin: auto;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #d2a77d;
+  color: #322c2c;
+  padding: 30px 20px;
+  padding-top: 10px; 
+  text-align: center;
+}
+
+.mini-gallery {
+  color: white;
+  padding: 40px 20px;
+  padding-top: 5px; 
+  text-align: center;
+}
+
+.gallery-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.gallery-row img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.mini-gallery .btn {
+  background: #d2a77d;
+}
+
+footer {
+  padding: 16px;
+}
