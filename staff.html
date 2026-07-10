@@ -90,7 +90,7 @@
         })
         .then(resp => resp.json())
         .then(result => {
-            console.log(result)
+            // console.log(result)
             if (result == true) return window.location.replace('vettuk.html?from=staff', "_self");
             window.location.replace('sikertelen-jelentkezes.html', "_self");
         })
