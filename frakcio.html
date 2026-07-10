@@ -107,6 +107,9 @@
 
         const apiUrl = 'https://play.sunlightrp.hu:3000/api/jelentkezes/frakcio';
 
+        console.log("FRAKCIO API:", apiUrl);
+        console.log("FRAKCIO BODY:", body);
+
         const response = await fetch(apiUrl, {
             method: 'POST',
             headers: {
