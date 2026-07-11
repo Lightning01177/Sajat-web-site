@@ -146,16 +146,12 @@
     </footer>
 
     <script>
-    fetch("http://play.sunlightrp.hu:30120/players.json")
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("online-count").innerHTML = 
-                JSON.stringify(data);
-        })
-        .catch(error => {
-            console.error(error);
-            document.getElementById("online-count").innerHTML = "Offline";
-        });
+        fetch('https://servers-frontend.fivem.net/api/servers/single/6zrmj7')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('online-count').innerText = data.Data.clients;
+            })
+            .catch(err => console.error(err));
     </script>
 </body>
 
