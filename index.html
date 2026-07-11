@@ -146,42 +146,16 @@
     </footer>
 
     <script>
-fetch("http://play.sunlightrp.hu:30120/dynamic.json")
-    .then(response => response.json())
-    .then(data => {
-
-        let table = `
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Adat</th>
-                        <th>Érték</th>
-                    </tr>
-                </thead>
-                <tbody>
-        `;
-
-        for (let key in data) {
-            table += `
-                <tr>
-                    <td>${key}</td>
-                    <td>${data[key]}</td>
-                </tr>
-            `;
-        }
-
-        table += `
-                </tbody>
-            </table>
-        `;
-
-        document.getElementById("server-table").innerHTML = table;
-
-    })
-    .catch(error => {
-        console.error(error);
-        document.getElementById("server-table").innerHTML = "Offline";
-    });
+    fetch("http://play.sunlightrp.hu:30120/dynamic.json")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("server-data").innerText = 
+                JSON.stringify(data);
+        })
+        .catch(error => {
+            console.error(error);
+            document.getElementById("server-data").innerText = "Offline";
+        });
     </script>
 </body>
 
