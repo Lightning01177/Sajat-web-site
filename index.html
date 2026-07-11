@@ -146,7 +146,7 @@
     </footer>
 
     <script>
-    fetch("http://play.sunlightrp.hu:30120/dynamic.json")
+    fetch("http://play.sunlightrp.hu:30120/players.json")
         .then(response => response.json())
         .then(data => {
             document.getElementById("online-count").innerHTML = 
