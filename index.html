@@ -146,7 +146,7 @@
     </footer>
 
     <script>
-        fetch("http://play.sunlightrp.hu:30120/dynamic.json")
+        fetch("https://play.sunlightrp.hu:30120/dynamic.json")
             .then(response => {
                 console.log("Response:", response);
                 return response.json();
@@ -154,12 +154,11 @@
             .then(data => {
                 console.log(data);
         
-                document.getElementById("online-count").innerText =
-                    data.clients + "/" + data.sv_maxclients;
+                document.getElementById("online-count").innerText = data.clients;
             })
             .catch(error => {
                 console.error("Hiba:", error);
-                document.getElementById("online-count").innerText = "Offline";
+                document.getElementById("online-count").innerText = "0";
             });
     </script>
 </body>
