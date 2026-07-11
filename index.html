@@ -149,12 +149,12 @@
     fetch("http://play.sunlightrp.hu:30120/dynamic.json")
         .then(response => response.json())
         .then(data => {
-            document.getElementById("server-data").innerText = 
+            document.getElementById("online-count").innerHTML = 
                 JSON.stringify(data);
         })
         .catch(error => {
             console.error(error);
-            document.getElementById("server-data").innerText = "Offline";
+            document.getElementById("online-count").innerHTML = "Offline";
         });
     </script>
 </body>
