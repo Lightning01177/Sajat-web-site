@@ -149,8 +149,7 @@
         fetch("http://play.sunlightrp.hu:30120/dynamic.json")
         .then(res => res.json())
         .then(data => {
-            document.getElementById('online-count').innerText =
-                data.clients;
+            document.getElementById('online-count').innerText = data.clients;
         });
     </script>
 </body>
